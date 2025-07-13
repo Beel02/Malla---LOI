@@ -2,85 +2,76 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Malla LOI FRBB UTN</title>
+  <title>Malla LOI UTN</title>
   <style>
     body { font-family: sans-serif; margin: 20px; }
     .materia {
-      padding: 8px 12px;
-      margin: 4px;
-      border: 1px solid #666;
-      border-radius: 4px;
       display: inline-block;
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.3s;
     }
-    .cursada { background-color: #a2d5a2; }
-    h2 { margin-top: 20px; }
+    .cursada {
+      background-color: #a2d5a2;
+    }
   </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.materia').forEach(div => {
-        div.addEventListener('click', () => {
-          div.classList.toggle('cursada');
-          localStorage.setItem(div.id, div.classList.contains('cursada'));
-        });
-        if (localStorage.getItem(div.id) === 'true') {
-          div.classList.add('cursada');
-        }
-      });
-    });
-  </script>
 </head>
 <body>
-  <h1>Malla LOI – Lic. en Organización Industrial (UTN FRBB)</h1>
+  <h1>Malla de la Licenciatura en Organización Industrial (LOI)</h1>
 
-  <h2>Primer Año</h2>
-  <div id="OI1" class="materia">Organización Industrial I</div>
-  <div id="InglesI" class="materia">Inglés I</div>
-  <div id="AnalisisM" class="materia">Análisis Matemático</div>
-  <div id="Quimica" class="materia">Química</div>
-  <div id="Algebra" class="materia">Álgebra</div>
-  <div id="Fisica" class="materia">Física</div>
-  <div id="Estadistica" class="materia">Probabilidad y Estadística</div>
-  <div id="InformaticaI" class="materia">Informática I</div>
-  <div id="EconomiaG" class="materia">Economía General</div>
+  <h2>Primer año</h2>
+  <div class="materia">Álgebra</div>
+  <div class="materia">Análisis Matemático</div>
+  <div class="materia">Física</div>
+  <div class="materia">Química</div>
+  <div class="materia">Economía General</div>
+  <div class="materia">Probabilidad y Estadística</div>
+  <div class="materia">Informática I</div>
+  <div class="materia">Inglés I</div>
+  <div class="materia">Organización Industrial I</div>
 
-  <h2>Segundo Año</h2>
-  <div id="OI2" class="materia">Organización Industrial II</div>
-  <div id="InglesII" class="materia">Inglés II</div>
-  <div id="Materiales" class="materia">Conocimiento de Materiales</div>
-  <div id="Costos" class="materia">Costos</div>
-  <div id="InvestOp" class="materia">Investigación Operativa</div>
-  <div id="Comercializacion" class="materia">Comercialización</div>
-  <div id="ProcesosInd" class="materia">Procesos Industriales</div>
-  <div id="EstudioTrabajo" class="materia">Estudio del Trabajo</div>
-  <div id="InformaticaII" class="materia">Informática II</div>
-  <div id="Legislacion" class="materia">Legislación</div>
+  <h2>Segundo año</h2>
+  <div class="materia">Conocimiento de Materiales</div>
+  <div class="materia">Costos</div>
+  <div class="materia">Procesos Industriales</div>
+  <div class="materia">Investigación Operativa</div>
+  <div class="materia">Comercialización</div>
+  <div class="materia">Estudio del Trabajo</div>
+  <div class="materia">Legislación</div>
+  <div class="materia">Inglés II</div>
+  <div class="materia">Organización Industrial II</div>
+  <div class="materia">Informática II</div>
 
-  <h2>Tercer Año</h2>
-  <div id="PlanificacionCP" class="materia">Planificación y Control de la Producción</div>
-  <div id="OI3" class="materia">Organización Industrial III</div>
-  <div id="IngenieriaCalidad" class="materia">Ingeniería de Calidad</div>
-  <div id="EconomiaEmpresa" class="materia">Economía de la Empresa</div>
-  <div id="SistemasMetodos" class="materia">Sistemas y Métodos Administrativos</div>
-  <div id="EEContables" class="materia">Análisis de Estados Contables</div>
-  <div id="SegHigAmb" class="materia">Seguridad, Higiene e Ingeniería Ambiental</div>
+  <h2>Tercer año</h2>
+  <div class="materia">Planificación y Control de la Producción</div>
+  <div class="materia">Organización Industrial III</div>
+  <div class="materia">Economía de la Empresa</div>
+  <div class="materia">Análisis de Estados Contables</div>
+  <div class="materia">Sistemas y Métodos Administrativos</div>
+  <div class="materia">Seguridad, Higiene e Ingeniería Ambiental</div>
+  <div class="materia">Ingeniería de Calidad</div>
 
-  <h2>Cuarto Año</h2>
-  <div id="CompetenciasIng" class="materia">Competencias Ingenieriles</div>
-  <div id="ControlGestion" class="materia">Control de Gestión</div>
-  <div id="ComercioExt" class="materia">Comercio Exterior</div>
-  <div id="EvalProyectos" class="materia">Evaluación de Proyectos</div>
-  <div id="EconomiasReg" class="materia">Economías Regionales (electiva)</div>
-  <div id="RelacionesIndustrial" class="materia">Relaciones Industriales</div>
-  <div id="ProyectoFinal" class="materia">Proyecto Final</div>
+  <h2>Cuarto año</h2>
+  <div class="materia">Evaluación de Proyectos</div>
+  <div class="materia">Control de Gestión</div>
+  <div class="materia">Relaciones Industriales</div>
+  <div class="materia">Competencias Ingenieriles</div>
+  <div class="materia">Proyecto Final</div>
 
-  <h2>Electivas disponibles (según oferta)</h2>
-  <div id="Portuaria" class="materia">Ingeniería Económica Portuaria</div>
-  <div id="Logistica" class="materia">Logística</div>
-  <div id="Emprendimientos" class="materia">Creación de Emprendimientos</div>
-  <div id="EcoConocimiento" class="materia">Economía del Conocimiento</div>
-  <div id="ComercioE" class="materia">Comercio Electrónico</div>
-  <div id="MarketingDigital" class="materia">Mercadotecnia Digital</div>
+  <h2>Materias optativas</h2>
+  <div class="materia">Comercio Exterior</div>
+  <div class="materia">Logística</div>
+  <div class="materia">Economía del Conocimiento</div>
+  <div class="materia">Comercio Electrónico</div>
+  <div class="materia">Mercadotecnia Digital</div>
+  <div class="materia">Ingeniería Económica Portuaria</div>
+
+  <script>
+    document.querySelectorAll('.materia').forEach(m => {
+      m.onclick = () => m.classList.toggle('cursada');
+    });
+  </script>
 </body>
 </html>
